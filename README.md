@@ -8,7 +8,7 @@
 
 Inspect, edit, validate and publish Microsoft Power Automate flow JSON directly from the designer, with a code editor powered by Monaco.
 
-[**Install from the Chrome Web Store**](https://chromewebstore.google.com/detail/mfdmecomnlocbddniidddpkkomhmpkgl?utm_source=github&utm_medium=referral&utm_campaign=readme) · [Report a bug](https://github.com/MaximeGrn/power-automate-editor/issues/new?template=bug_report.md) · [Suggest a feature](https://github.com/MaximeGrn/power-automate-editor/issues/new?template=feature_request.md)
+[**Install from the Chrome Web Store**](https://chromewebstore.google.com/detail/mfdmecomnlocbddniidddpkkomhmpkgl?utm_source=github) · [Report a bug](https://github.com/MaximeGrn/power-automate-editor/issues/new?template=bug_report.md) · [Suggest a feature](https://github.com/MaximeGrn/power-automate-editor/issues/new?template=feature_request.md)
 
 ![Edit a Power Automate flow as JSON alongside the visual designer](assets/edit-flow.png)
 
@@ -20,7 +20,7 @@ Open the editor alongside the designer to keep the visual flow in view. Resize t
 
 ## Get started
 
-1. [Install the extension from the Chrome Web Store](https://chromewebstore.google.com/detail/mfdmecomnlocbddniidddpkkomhmpkgl?utm_source=github&utm_medium=referral&utm_campaign=readme).
+1. [Install the extension from the Chrome Web Store](https://chromewebstore.google.com/detail/mfdmecomnlocbddniidddpkkomhmpkgl?utm_source=github).
 2. Open a cloud flow in the [Power Automate designer](https://make.powerautomate.com/) and wait for it to finish loading.
 3. Click **Editor** in the designer toolbar (tooltip: **Edit the flow as JSON**).
 4. Edit the JSON, then click **Validate** to review errors and warnings.
@@ -102,7 +102,7 @@ Found a problem? [Report a bug](https://github.com/MaximeGrn/power-automate-edit
 
 Have an idea? [Suggest a feature](https://github.com/MaximeGrn/power-automate-editor/issues/new?template=feature_request.md) and describe the problem it would solve.
 
-If the extension helps you, a [Chrome Web Store review](https://chromewebstore.google.com/detail/mfdmecomnlocbddniidddpkkomhmpkgl?utm_source=github&utm_medium=referral&utm_campaign=readme) or a GitHub star helps others discover it.
+If the extension helps you, a [Chrome Web Store review](https://chromewebstore.google.com/detail/mfdmecomnlocbddniidddpkkomhmpkgl?utm_source=github) or a GitHub star helps others discover it.
 
 ---
 

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/icon.png" alt="Power Automate Editor icon" width="80">
+  <img src="assets/icon.png" alt="Power Automate Editor icon" width="96">
 </p>
 
 # Power Automate Editor
@@ -8,23 +8,19 @@
 
 Inspect, edit, validate and publish Microsoft Power Automate flow JSON directly from the designer, with a code editor powered by Monaco.
 
-[**Install from the Chrome Web Store**](https://chromewebstore.google.com/detail/mfdmecomnlocbddniidddpkkomhmpkgl?hl=en) · [Report a bug](https://github.com/MaximeGrn/power-automate-editor/issues/new?template=bug_report.md) · [Suggest a feature](https://github.com/MaximeGrn/power-automate-editor/issues/new?template=feature_request.md)
+[**Install from the Chrome Web Store**](https://chromewebstore.google.com/detail/mfdmecomnlocbddniidddpkkomhmpkgl?utm_source=github&utm_medium=referral&utm_campaign=readme) · [Report a bug](https://github.com/MaximeGrn/power-automate-editor/issues/new?template=bug_report.md) · [Suggest a feature](https://github.com/MaximeGrn/power-automate-editor/issues/new?template=feature_request.md)
 
 ![Edit a Power Automate flow as JSON alongside the visual designer](assets/edit-flow.png)
 
 ## Why use it?
 
-When the visual designer gets in the way, work directly with your flow's JSON without the export, unzip, edit and reimport cycle.
+When the visual designer gets in the way, work directly with your flow's JSON without the export, unzip, edit and reimport cycle. Inspect actions, expressions and connection references together, make changes in one place, then validate and save them from the editor.
 
-- **Edit in context:** open the JSON editor alongside the Power Automate designer, resize it or move it to a separate tab.
-- **Work with a code editor:** syntax highlighting, formatting and JSON schema diagnostics powered by Monaco.
-- **Validate before publishing:** run Power Automate validation and review errors and warnings inside the editor.
-- **Save or publish:** save changes as a draft or publish the updated flow from the editor.
-- **Use your preferred AI assistant:** manually copy JSON into ChatGPT, Claude, Copilot or another assistant to help explain or improve a flow. You choose what to share; there is no built-in AI connection.
+Open the editor alongside the designer to keep the visual flow in view. Resize the panel as you work, or move the current draft into a separate tab for more space when editing a large definition.
 
 ## Get started
 
-1. [Install the extension from the Chrome Web Store](https://chromewebstore.google.com/detail/mfdmecomnlocbddniidddpkkomhmpkgl?hl=en).
+1. [Install the extension from the Chrome Web Store](https://chromewebstore.google.com/detail/mfdmecomnlocbddniidddpkkomhmpkgl?utm_source=github&utm_medium=referral&utm_campaign=readme).
 2. Open a cloud flow in the [Power Automate designer](https://make.powerautomate.com/) and wait for it to finish loading.
 3. Click **Editor** in the designer toolbar (tooltip: **Edit the flow as JSON**).
 4. Edit the JSON, then click **Validate** to review errors and warnings.
@@ -34,15 +30,39 @@ You need a signed-in Microsoft account with permission to edit the flow. The ext
 
 Keep a backup before making substantial changes. Validation helps detect issues, but test the flow after publishing to confirm its behavior.
 
-## See it in action
+## Features
 
-### Validate your changes
+### A code editor for your flow JSON
+
+Monaco provides syntax highlighting, line numbers, search and replace, and JSON formatting, making long flow definitions easier to navigate. Formatting on paste helps keep edits readable, while JSON schema diagnostics highlight structural problems as you type.
+
+Use the full-screen button to open the editor in a separate browser tab with your current edits. The editor shows an **Unsaved changes** indicator, and **Cmd+S** on macOS or **Ctrl+S** on Windows/Linux saves a draft.
+
+![Monaco JSON editor with syntax highlighting, schema validation and a full-screen workspace](assets/code-editor.png)
+
+### Validate with Power Automate
+
+Click **Validate** to check the edited definition using Power Automate's validation services. Results appear inside the editor, grouped into errors and warnings, with the affected operation and its message so you can find what needs attention.
+
+This complements the JSON schema diagnostics: valid JSON can still contain a flow configuration that Power Automate rejects. When Microsoft returns fix instructions, you can copy them from the results panel. After making corrections, run validation again before publishing.
 
 ![Power Automate validation errors and warnings shown inside the JSON editor](assets/validate-flow.png)
 
-### Save a draft or publish
+### Save a draft or publish your changes
+
+**Save draft** saves your edited definition without publishing it, so you can keep working before making the update live. **Publish** saves the draft and publishes the updated flow through Microsoft services, directly from the JSON editor.
+
+Both actions use your existing Microsoft session and require permission to edit the flow. Availability depends on the flow and the Microsoft context loaded by the designer. If the editor asks you to save from the designer first, do so, then retry. Success and error messages appear in the editor; diagnostic details can be copied when troubleshooting an error.
 
 ![Save changes as a draft or publish from the Power Automate JSON editor](assets/save-publish.png)
+
+### Bring your flow to your preferred AI assistant
+
+Copy the JSON into ChatGPT, Claude, Gemini, Microsoft Copilot or another assistant to explain a flow, investigate an error, draft documentation or suggest changes across several actions. For example, ask an assistant to explain the conditions in a flow or identify where an expression should be updated.
+
+Review the suggestions, apply the relevant changes in the editor, then validate and test the flow. You choose what to copy and where to share it; the extension does not automatically send your flow to an AI service and requires no AI API key. Remove sensitive information before sharing.
+
+![Use flow JSON with an AI assistant of your choice for analysis, debugging or documentation](assets/ai-assistants.png)
 
 ## Privacy and permissions
 
@@ -82,7 +102,7 @@ Found a problem? [Report a bug](https://github.com/MaximeGrn/power-automate-edit
 
 Have an idea? [Suggest a feature](https://github.com/MaximeGrn/power-automate-editor/issues/new?template=feature_request.md) and describe the problem it would solve.
 
-If the extension helps you, a [Chrome Web Store review](https://chromewebstore.google.com/detail/mfdmecomnlocbddniidddpkkomhmpkgl?hl=en) or a GitHub star helps others discover it.
+If the extension helps you, a [Chrome Web Store review](https://chromewebstore.google.com/detail/mfdmecomnlocbddniidddpkkomhmpkgl?utm_source=github&utm_medium=referral&utm_campaign=readme) or a GitHub star helps others discover it.
 
 ---
 
